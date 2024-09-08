@@ -1,0 +1,7 @@
+18:30:48.572 [main] INFO  utils.Log - Called method<click> on  
+18:30:51.475 [main] INFO  utils.Log - called method <sendKeys> on element <input name="login[username]" value="" autocomplete="off" id="email" type="email" class="input-text" title="Email" data-validate="{required:true, 'validate-email':true}" aria-required="true">
+18:30:51.476 [main] INFO  utils.Log - Called method <waitForElementToBeVisible> on locator :
+18:30:51.981 [main] INFO  utils.Log - called method <sendKeys> on element <input name="login[password]" type="password" autocomplete="off" class="input-text" id="pass" title="Password" data-validate="{required:true}" aria-required="true">
+18:30:51.982 [main] INFO  utils.Log - Called method <waitForElementToBeVisible> on locator :
+18:30:52.295 [main] INFO  utils.Log - Called method<click> on  
+18:30:58.356 [main] INFO  utils.Log - Called method<click> on  

@@ -13,6 +13,6 @@ public class BasePage extends SeleniumWrappers{
 
 	public MenuPage menu =  new MenuPage(driver);
 	public LoginPage myAccount = new LoginPage(driver);
-	public WhatSNewPage whatSNew = new WhatSNewPage(driver);
+	public Cart cart = new Cart(driver);
 	
 }

@@ -1,4 +1,8 @@
 package pages;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -30,6 +34,18 @@ public class MenuPage extends SeleniumWrappers {
 	public WebElement searchIcon;
 	@FindBy(id = "search") 
 	public WebElement searchMenu;
+	@FindBy(xpath="//img[@class='product-image-photo']")
+	public WebElement product;
+	@FindBy(xpath="//div[@class='swatch-option text']")
+	public WebElement size;
+	@FindBy(xpath="//div[@class='swatch-option color']")
+	public WebElement color;
+	@FindBy(xpath="//span[contains(text(), 'Add to Cart')]")
+	public WebElement addToCart;
+	@FindBy(xpath="//div[contains(text(), 'You added ')]")
+	public WebElement message;
+	@FindBy(xpath="//span[contains(text(), 'My Cart')]")
+	public WebElement myCart;
 	@FindBy(id = "ui-id-3") 
 	public WebElement whatSNewMenu;
 	@FindBy(id = "ui-id-4") 
@@ -42,8 +58,12 @@ public class MenuPage extends SeleniumWrappers {
 	public WebElement trainingMenu;
 	@FindBy(id = "ui-id-8") 
 	public WebElement saleMenu;
-
-		
+	@FindBy(id = "top-cart-btn-checkout") 
+	public WebElement checkOut;
+	
+	
+	
+	//methods	
 		public void search(String text) {
 			Actions action =  new Actions(driver);
 			searchMenu.click();
@@ -54,4 +74,15 @@ public class MenuPage extends SeleniumWrappers {
 
 		}
 		
+		public void addProduct(WebElement product) {
+			product.click();
+			size.click();
+			color.click();
+			addToCart.click();
+			
+		}
+		
+		public boolean displayedMessage(WebElement message) {
+			return message.isDisplayed();
+		}
 }
