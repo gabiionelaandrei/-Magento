@@ -1,0 +1,8 @@
+11:51:57.280 [main] INFO  utils.Log - Called method<click> on  
+11:51:58.566 [main] INFO  utils.Log - called method <sendKeys> on element <input name="login[username]" value="" autocomplete="off" id="email" type="email" class="input-text" title="Email" data-validate="{required:true, 'validate-email':true}" aria-required="true">
+11:51:58.566 [main] INFO  utils.Log - Called method <waitForElementToBeVisible> on locator :
+11:51:58.610 [main] ERROR utils.Log - Keys to send should be a not null CharSequence
+11:51:58.624 [main] INFO  utils.Log - called method <sendKeys> on element <input name="login[password]" type="password" autocomplete="off" class="input-text" id="pass" title="Password" data-validate="{required:true}" aria-required="true">
+11:51:58.624 [main] INFO  utils.Log - Called method <waitForElementToBeVisible> on locator :
+11:51:58.664 [main] ERROR utils.Log - Keys to send should be a not null CharSequence
+11:51:58.664 [main] INFO  utils.Log - Called method<click> on  
